@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-size: medium;
+            background: #3498db;
+            color: #fff;
+            border: 0.25rem solid #3498db;
+            padding: 0.85em 0.75em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:hover{color: #3498db;}
+        button:before{content: '';
+        background: #ecf0f1;
+        position: absolute;
+        padding: 0.85em 0.75em;
+
+    }
+    .ani::before{
+        left:-100%; right:100%;
+        top:0; bottom:0;
+    }
+    button[class^='ani']:hover:before{
+        left: 0; right: 0; top: 0; bottom: 0;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <button>
+        <div class="ani">버튼 애니메이션 연습</div>
+    </button>
+</body>
+</html>
