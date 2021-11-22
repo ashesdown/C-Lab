@@ -1,0 +1,118 @@
+body{
+  margin: 0px;
+}
+.MT{
+  display: flex;
+  border: 0px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+}
+
+.MTT{
+font-size: 30px;
+}
+
+.MTB button{
+  background: white;
+  border: 0px;
+  color: black;
+  margin: 15px;
+}
+
+.MTB button:hover{
+  background: white;
+  border: 0px;
+  color: blue;
+}
+
+.EB{
+  height: 40px;
+  width: 150px;
+  background: white;
+  border: 1px solid gray;
+  color: gray;
+  transition: 0.5s;
+  
+}
+
+.EB:hover{
+  background: blue;
+  border: 1px solid blue;
+  color: white;
+}
+
+.MV{
+  width: 150vw;
+  height: 150vw;
+}
+.VB{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 550px;
+  overflow: hidden;
+}
+
+.Mtext{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Stext{
+  font-size: 16px;
+  text-align: center;
+}
+
+.Tbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.Tbox div{
+  width: 350px;
+  height: 200px;
+}
+
+.Tbox p{
+  margin: 15px;
+  color: white
+}
+
+.Tbox a{
+  font-size: 12px;
+  margin:15px;
+  color: white
+}
+
+.Tbox div:nth-child(2n+1){
+  background-color: rgb(48, 67, 163);
+}
+
+.Tbox div:nth-child(2n){
+  background-color: rgb(4, 18, 81);
+}
+
+.BT {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.공지{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.공지 div:nth-child(n+1){
+color: grey;
+border-bottom: 1px solid grey;
+width: 1050px;
+font-size: 14px;
+}
+
