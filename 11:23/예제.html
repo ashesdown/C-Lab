@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<input type="button" id="myButton" value="NO"
+       onclick="Buttontoggle();">
+</form>
+</body>
+<script type="text/javascript">
+function Buttontoggle()
+{
+  var t = document.getElementById("myButton");
+  if(t.value=="YES"){
+      t.value="NO";}
+  else if(t.value=="NO"){
+      t.value="YES";}
+}
+</script>
+</html>

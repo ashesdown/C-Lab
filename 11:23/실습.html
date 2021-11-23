@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탐구활동_2</title>
+    <style>
+        #box {
+            position: absolute;
+            margin-top: 100px;
+            line-height: 200px;
+            background-color: lightpink;
+            border: 18px solid darkblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+            color: black;
+            left : 0px;
+	          top : 0px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <button id="btn-left" onclick="moveLeft()">왼쪽으로 이동</button>
+        <button id="btn-right" onclick="moveRight()">오른쪽으로 이동</button>
+        <button id="btn-left" onclick="moveUp()">위쪽으로 이동</button>
+        <button id="btn-right" onclick="moveDown()">아래쪽으로 이동</button>
+    </div>
+    <div id="box">BOX</div>
+    <script>
+
+var x = 0;
+var y = 0;
+var box = document.getElementById('box');
+
+function moveLeft() {
+	x -= 20;
+	box.style.left = x + 'px';   // px는 스타일시트 단위
+}
+
+function moveRight() {
+	x += 20;
+	box.style.left = x + 'px';   // px는 스타일시트 단위
+}
+
+function moveUp() {
+	y -= 20;
+	box.style.top = y + 'px';   // px는 스타일시트 단위
+}
+function moveDown() {
+	y += 20;
+	box.style.top = y + 'px';   // px는 스타일시트 단위
+
+}
+//출처: https://corearoot.tistory.com/5 [지식을 나눠요]
+
+
+
+    </script>
+</body>
+
+</html>
+

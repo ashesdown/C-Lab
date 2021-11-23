@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <style>
+    .menu_panel {
+      position: fixed;
+      top: 30px;
+      left: 8px;
+      background-color: #efefef;
+      width: 30%;
+      min-width: 200px;
+      max-width: 400px;
+    }
+
+    .menu_panel>ul {
+      padding: 0;
+    }
+
+    .menu_panel>ul>li {
+      list-style: none;
+      padding: 8px;
+    }
+
+    .menu_panel>ul>li:hover {
+      background-color: #fefefe;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <button onclick="toggle()">메뉴</button>
+  <div class="menu_panel">
+    <ul>
+      <li>홈</li>
+      <li>프로젝트 소개</li>
+      <li>팀 소개</li>
+      <li>미디어</li>
+    </ul>
+  </div>
+
+  <script>
+    var element = document.getElementsByClassName('menu_panel');
+  
+    function toggle() {
+      element[0].classList.toggle("hidden");
+    }
+  
+  </script>
+
+</body>
+
+</html>
