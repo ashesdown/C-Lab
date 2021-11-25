@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tankboy</title>
+  <style>
+    body {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gamebox {
+      border: 2px solid black;
+      height: 600px;
+      width: 600px;
+    }
+
+    .you {
+      border-bottom: 50px solid blue;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      width: 0px;
+      height: 0px;
+    }
+
+    .name {
+      font-size: 15px;
+      color: black;
+    }
+
+    .tank {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      margin-top: 300px;
+      margin-left: 670px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gamebox">
+    <div class="btn">
+      <button id="btn-left" onclick="moveLeft()">왼쪽으로 이동</button>
+      <button id="btn-right" onclick="moveRight()">오른쪽으로 이동</button>
+      <button id="btn-left" onclick="moveUp()">위쪽으로 이동</button>
+      <button id="btn-right" onclick="moveDown()">아래쪽으로 이동</button>
+    </div>
+    <div class="tank">
+      <div class="you"></div>
+      <p class="name">you</p>
+    </div>
+  </div>
+  <script>
+
+    let x = 0;
+    let y = 0;
+    let tank = document.getElementById('tank');
+
+    function moveLeft() {
+      x -= 20;
+      tank.style.left = x + 'px';
+    }
+
+    function moveRight() {
+      x += 20;
+      tank.style.left = x + 'px';
+    }
+
+    function moveUp() {
+      y -= 20;
+      tank.style.top = y + 'px';
+    }
+    function moveDown() {
+      y += 20;
+      tank.style.top = y + 'px';
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>

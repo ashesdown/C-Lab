@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function 사랑() {
+      var love = parseInt(document.getElementById("mind").value);
+      console.log (typeof(love))
+      console.log(love);
+
+      if (1 < love && love < 10) {
+        alert("당신은 사랑에 빠지고 있습니다")
+      } else if (10 < love && love < 20) {
+        alert("당신은 그 사람이 눈에 걸립니다")
+      }
+
+      else if (20 < love && love < 30) {
+        alert("당신은 그 사람에게 관심을 가집니다")
+      }
+
+      else if (30 < love && love < 40) {
+        alert("당신의 눈은 이제 그 사람을 바라봅니다")
+      }
+
+      else if (40 < love && love < 50) {
+        alert("당신은 그 사람에 대해 점점 알게 됩니다")
+      }
+
+      else if (50 < love && love < 60) {
+        alert("당신의 몸이 그녀를 향해 다가갑니다")
+      }
+
+      else if (60 < love && love < 70) {
+        alert("당신은 그녀를 학교 뒤로 부릅니다")
+      }
+
+      else if (80 < love && love < 90) {
+        alert("당신의 마음이 커지고 있습니다")
+      }
+
+      else if (90 < love && love < 100) {
+        alert("당신의 마음이 커지고 있습니다")
+      }
+      else if (love <= 10) {
+        alert("당신은 사랑을 하고있지 않습니다")
+      }
+      else if (love >= 100) {
+        alert("당신은 그 사람에게 집착하고 있습니다")
+      }
+
+
+
+    }
+  </script>
+  <form action=''>
+    <input type="text" placeholder="당신의 마음을 1~100까지의 수로 써주세요" width=250 id="mind">
+    <input type="button" value="입력" onclick="사랑()">
+  </form>
+</body>
+
+</html>
