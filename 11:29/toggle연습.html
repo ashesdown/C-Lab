@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .test-class {
+  background: #00FF00 !important
+}
+#test{
+  background: #FF0000; width: 30px; height: 30px;
+}
+  </style>
+</head>
+<body>
+  <div id="test" id="test">div</div>
+<button onclick="toggle()">
+Toggle
+</button>
+
+</button>
+</body>
+<script>
+  var element = document.getElementById('test');
+
+function toggle() {
+	element.classList.toggle('test-class');
+}
+
+</script>
+</html>
