@@ -116,3 +116,37 @@ width: 1050px;
 font-size: 14px;
 }
 
+#BWB{
+  width: 50px;
+  height: 30px;
+  border: 0px;
+  background-color: blue;
+  color: white;
+}
+
+.test-class {
+  background: rgb(49, 49, 49) !important;
+  color: white;
+}
+#test{
+  display: flex;
+  border: 0px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+}
+
+#test2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#test3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
