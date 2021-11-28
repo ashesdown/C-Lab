@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script src="과제.js"></script>
   <div id="test">
     <div class="MTT">거꾸로캠퍼스</div>
     <div class="MTB">
@@ -88,17 +91,25 @@
   </div>
 </div>
 <script>
-  var element = document.getElementById('test');
-  var element2 = document.getElementById('test2');
-  var element3 = document.getElementById('test3');
-  
-  
+ var element = document.getElementById('test');
+var element2 = document.getElementById('test2');
+var element3 = document.getElementById('test3');
+
+
 
 function toggle() {
-	element.classList.toggle('test-class');
-  element2.classList.toggle('test-class');
-  element3.classList.toggle('test-class');
+element.classList.toggle('test-class');
+element2.classList.toggle('test-class');
+element3.classList.toggle('test-class');
 }
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('#test2', {
+  scrollTrigger:"#test3",
+  x: 1080,
+  duration: 1.5
+} ); 
 
 </script>
 
