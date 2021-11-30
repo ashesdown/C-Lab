@@ -118,6 +118,12 @@ gsap.to('#test2', {
   duration: 1.5
 } ); 
 
+
+
+document.getElementById('body').addEventListener('scroll-up', function header_fix(){
+  document.getElementById('test').style.display = 'fixed';
+})
+
 </script>
 
 </body>
