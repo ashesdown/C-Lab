@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/ae5a707f15.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="test5">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script src="과제.js"></script>
@@ -23,7 +23,7 @@
       <button>법인소식</button>
       <button>거꾸로캠퍼스 소개</button>
     </div>
-    <button class="EB"><i class="far fa-edit"></i> 입학 상담 및 지원</button>
+    <button class="EB" onclick="caution()" ><i class="far fa-edit"></i> 입학 상담 및 지원</button>
     
     <button onclick="toggle()" id="BWB">
       낮/밤 모드
@@ -94,6 +94,7 @@
  var element = document.getElementById('test');
 var element2 = document.getElementById('test2');
 var element3 = document.getElementById('test3');
+var element5 = document.getElementById('test5')
 
 
 
@@ -101,6 +102,12 @@ function toggle() {
 element.classList.toggle('test-class');
 element2.classList.toggle('test-class');
 element3.classList.toggle('test-class');
+element5.classList.toggle('test-class');
+}
+
+function caution() {
+  console.log("작동?")
+  alert("오류")
 }
 
 gsap.registerPlugin(ScrollTrigger);

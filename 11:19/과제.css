@@ -156,3 +156,9 @@ font-size: 14px;
   justify-content: center;
   flex-direction: column;
 }
+
+.graybox{
+  display: block;
+  height: 200px;
+  align-items: center;
+}
