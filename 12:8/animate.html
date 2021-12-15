@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate</title>
+  <style>
+    #pipe1 {
+      background-image: url(./pipe.png);
+      position: absolute;
+      width: 200px;
+      height: 240px;
+      left: 0px;
+      top: 700px;
+      transform: rotate(90deg);
+    }
+
+    #pipe2 {
+      background-image: url(./pipe.png);
+      position: absolute;
+      width: 200px;
+      height: 240px;
+      left: 1089px;
+      top: 680px;
+
+    }
+
+
+    #mushroom {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: 60px;
+      top: 745px;
+      background: url(mushroom.png);
+      background-size: cover;
+      animation: mushroom 5s linear infinite normal;
+    }
+    @keyframes mushroom {
+      0% {translate: 0;}
+      20% {translate: 700px, 0px;}
+      40% {translate: 900px, 240px;}
+      60% {translate: 1114px, 315px;}
+      80% {translate: 1114px, 200px;}
+      100% {translate: 1114px, 0px;}
+    }
+
+    #time{animation-play-state: running;}
+  </style>
+</head>
+
+<body>
+  <div id="mushroom"></div>
+  <div id="pipe1"></div>
+  <div id="pipe2"></div>
+</body>
+
+</html>

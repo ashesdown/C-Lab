@@ -1,0 +1,88 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: skyblue; */
+}
+
+#monsterBody{
+  background: skyblue;
+  width: 100vw;
+  height: 50%;
+  overflow: hidden;
+}
+
+.eyes{
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  display: inline-block;
+  margin: 270px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transform-origin: 50%;
+  animation: blink 5s infinite;
+}
+
+.ball{
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 15px solid #333;
+}
+
+@keyframes blink {
+  0%, 100% {
+      transform: scale(1, .05);
+  }
+  5%,
+  95% {
+      transform: scale(1, 1);
+  }
+}
+
+#monsterMouse{
+  position: relative;
+  width: 100vw;
+  height: 50%;
+  background-color: rgb(199, 65, 65);
+  overflow: hidden;
+}
+
+#upMouse{
+position: absolute;
+width: 100vw;
+height: 175px;
+background: red;
+border-bottom: 5px solid black;
+}
+
+#downMouse{
+position: absolute;
+bottom: 0px;
+width: 100vw;
+height: 175px;
+background: red;
+border-top: 5px solid black;
+}
+
+#downMosue:hover{
+  bottom: -100px;
+}

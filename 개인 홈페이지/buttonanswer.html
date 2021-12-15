@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>웹 페이지를 위한 지배적인 마크업 언어는? (대문자로 입력)</h2>
+답 : <input type="text" id="answer">
+
+<input type="button" onclick="func()" value="정답확인">
+
+<script type="text/javascript">
+function func() {
+
+	let answer = document.getElementById('answer').value;
+	if(answer == ""){
+		alert('답을 기입해 주십시오');
+	}
+	else if(answer == "HTML"){
+		alert('정답입니다');
+	}
+	else{
+		document.getElementById('answer').value = "";
+		alert('정답이 아닙니다');
+	}
+}
+</script>
+</body>
+</html>
