@@ -8,14 +8,12 @@
   <title>monster</title>
   <!-- maincss -->
   <link rel="stylesheet" href="./monster.css">
-  <!-- iconjs -->
-  <script src="https://kit.fontawesome.com/ae5a707f15.js" crossorigin="anonymous"></script>
-  <!-- mainjs -->
-  <script src="./monster.js"></script>
+  <link rel="stylesheet" href="./popup.css">
 </head>
 
 <body>
   <div id="monsterBody">
+
     <div class="eyes">
       <div class="eye">
         <div class="ball"></div>
@@ -26,11 +24,82 @@
       </div>
     </div>
   </div>
-  <div id="monsterMouse">
+  <div id="monsterMouse" onmouseover="mouseAniBefore()" onmouseleave="mouseAniAfter()">
+    <div id="tonsilDeep"></div>
+    <div id="tonsilDeeper"></div>
+    <div id="tonsilDeepist"></div>
+    <div id="uvula"></div>
+    <div id="tongue"></div>
+    <div id="human1"></div>
+    <div id="human2"></div>
+    <div id="human3"></div>
+    <div id="human4"></div>
+    <div id="box1">Jules Verne</div>
+    <div id="box2">Observation<br>and<br>Fusion</div>
+    <div id="box3">Digital</div>
+    <div id="box4">Team<br>project</div>
+    <div id="toothDown"></div>
+    <div id="toothUp"></div>
     <div id="upMouse"></div>
     <div id="downMouse"></div>
-    <div id="mouseAni"></div>
   </div>
+  <!-- popup -->
+  <div class="modal hidden">
+    <div class="overlay"></div>
+    <div class="modalcontent">
+      <h1>신생명 에너지</h1>
+      <h3>Key word: 미래, 생명, 에너지, 디스토피아</h3>
+      <br>
+      <p>
+        서기 2100년
+        과거 2048년 세계는 연료가 남지 않게 된 ‘연료 파동(coal fuel shock)’이후 에너지 개발에 몰두했다. 인구는 반이 됐고 연료 비축분이 많은 국가 외에는 대부분 망했다. 한국은 이를 이겨내기 위해 통일했고 북한의 자원, 남한의 기술을 이용해 개발에 몰두했다. 2058년 통일 한국에서 신 에너지를 개발해 낸다. 생명력과 전력을 변환하는 에너지, ‘신생명 에너지’이다. 유기물과 무기물이 결합된 신 생명체 ‘생 기계(Bioinstrument)’를 만들었다. 세계는 신 에너지를 찾게 됐고, 이것은 우리의 일상생활에서 중요한 존재가 됐다. 생 기계는 탄소 배출이 인간 정도인 기계인데 인간과 유사한 구조이다. 음식물이 연료고 노폐물을 배출한다. 생 기계는 다양한 분야에서 이용된다. 통일한국은 북한의 통일 조건인 사회주의 체제를 이어가고 있다. 국민들은 반대했지만 전 국민의 수가 절반이 되자 통일은 진행됐다. 통일정부가 국정을 운영하고 있다. 실세는 ‘바이오 전자(Bio Electronics)’이다. 생 기계를 개발한 기업이다. 전 세계에서 가장 주가가 높다.</p>
+      <button id="Xbutton">X</button>
+    </div>
+  </div>
+
+  <div class="modal2 hidden">
+    <div class="overlay"></div>
+    <div class="modalcontent">
+      <h1>신생명 에너지</h1>
+      <h3>Key word: 미래, 생명, 에너지, 디스토피아</h3>
+      <br>
+      <p>
+        서기 210000000년
+        과거 2048년 세계는 연료가 남지 않게 된 ‘연료 파동(coal fuel shock)’이후 에너지 개발에 몰두했다. 인구는 반이 됐고 연료 비축분이 많은 국가 외에는 대부분 망했다. 한국은 이를 이겨내기 위해 통일했고 북한의 자원, 남한의 기술을 이용해 개발에 몰두했다. 2058년 통일 한국에서 신 에너지를 개발해 낸다. 생명력과 전력을 변환하는 에너지, ‘신생명 에너지’이다. 유기물과 무기물이 결합된 신 생명체 ‘생 기계(Bioinstrument)’를 만들었다. 세계는 신 에너지를 찾게 됐고, 이것은 우리의 일상생활에서 중요한 존재가 됐다. 생 기계는 탄소 배출이 인간 정도인 기계인데 인간과 유사한 구조이다. 음식물이 연료고 노폐물을 배출한다. 생 기계는 다양한 분야에서 이용된다. 통일한국은 북한의 통일 조건인 사회주의 체제를 이어가고 있다. 국민들은 반대했지만 전 국민의 수가 절반이 되자 통일은 진행됐다. 통일정부가 국정을 운영하고 있다. 실세는 ‘바이오 전자(Bio Electronics)’이다. 생 기계를 개발한 기업이다. 전 세계에서 가장 주가가 높다.</p>
+      <button id="Xbutton">X</button>
+    </div>
+  </div>
+
+  <div class="modal3 hidden">
+    <div class="overlay"></div>
+    <div class="modalcontent">
+      <h1>신생명 에너지</h1>
+      <h3>Key word: 미래, 생명, 에너지, 디스토피아</h3>
+      <br>
+      <p>
+        서기 2100년
+        과거 2048년 세계는 연료가 남지 않게 된 ‘연료 파동(coal fuel shock)’이후 에너지 개발에 몰두했다. 인구는 반이 됐고 연료 비축분이 많은 국가 외에는 대부분 망했다. 한국은 이를 이겨내기 위해 통일했고 북한의 자원, 남한의 기술을 이용해 개발에 몰두했다. 2058년 통일 한국에서 신 에너지를 개발해 낸다. 생명력과 전력을 변환하는 에너지, ‘신생명 에너지’이다. 유기물과 무기물이 결합된 신 생명체 ‘생 기계(Bioinstrument)’를 만들었다. 세계는 신 에너지를 찾게 됐고, 이것은 우리의 일상생활에서 중요한 존재가 됐다. 생 기계는 탄소 배출이 인간 정도인 기계인데 인간과 유사한 구조이다. 음식물이 연료고 노폐물을 배출한다. 생 기계는 다양한 분야에서 이용된다. 통일한국은 북한의 통일 조건인 사회주의 체제를 이어가고 있다. 국민들은 반대했지만 전 국민의 수가 절반이 되자 통일은 진행됐다. 통일정부가 국정을 운영하고 있다. 실세는 ‘바이오 전자(Bio Electronics)’이다. 생 기계를 개발한 기업이다. 전 세계에서 가장 주가가 높다.</p>
+      <button id="Xbutton">X</button>
+    </div>
+  </div>
+
+  <div class="modal4 hidden">
+    <div class="overlay"></div>
+    <div class="modalcontent">
+      <h1>신생명 에너지</h1>
+      <h3>Key word: 미래, 생명, 에너지, 디스토피아</h3>
+      <br>
+      <p>
+        서기 2100년
+        과거 2048년 세계는 연료가 남지 않게 된 ‘연료 파동(coal fuel shock)’이후 에너지 개발에 몰두했다. 인구는 반이 됐고 연료 비축분이 많은 국가 외에는 대부분 망했다. 한국은 이를 이겨내기 위해 통일했고 북한의 자원, 남한의 기술을 이용해 개발에 몰두했다. 2058년 통일 한국에서 신 에너지를 개발해 낸다. 생명력과 전력을 변환하는 에너지, ‘신생명 에너지’이다. 유기물과 무기물이 결합된 신 생명체 ‘생 기계(Bioinstrument)’를 만들었다. 세계는 신 에너지를 찾게 됐고, 이것은 우리의 일상생활에서 중요한 존재가 됐다. 생 기계는 탄소 배출이 인간 정도인 기계인데 인간과 유사한 구조이다. 음식물이 연료고 노폐물을 배출한다. 생 기계는 다양한 분야에서 이용된다. 통일한국은 북한의 통일 조건인 사회주의 체제를 이어가고 있다. 국민들은 반대했지만 전 국민의 수가 절반이 되자 통일은 진행됐다. 통일정부가 국정을 운영하고 있다. 실세는 ‘바이오 전자(Bio Electronics)’이다. 생 기계를 개발한 기업이다. 전 세계에서 가장 주가가 높다.</p>
+      <button id="Xbutton">X</button>
+    </div>
+  </div>
+  <!-- background music -->
+  <audio src="./monsterbgm.mp3" autoplay loop ></audio> 
+  <!-- mainjs -->
+  <script src="./monster.js"></script>
+  <script src="./popup.js"></script>
 </body>
 
 </html>

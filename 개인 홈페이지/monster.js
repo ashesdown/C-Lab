@@ -12,3 +12,28 @@ var balls = document.getElementsByClassName("ball");
       balls[i].style.top = y;
       balls[i].style.transform = "translate(-"+x+",-"+y+")";}
   };
+
+function mouseAniBefore(){
+  let upMouse = document.getElementById('upMouse')
+  let downMouse = document.getElementById('downMouse')
+  let tooth1 = document.getElementById('toothUp')
+  let tooth2 = document.getElementById('toothDown')
+
+  upMouse.style.top = '-50%'
+  downMouse.style.bottom = '-50%'
+  tooth1.style.top = '0px'
+  tooth2.style.bottom = '0px'
+}
+
+function mouseAniAfter(){
+  let upMouse = document.getElementById('upMouse')
+  let downMouse = document.getElementById('downMouse')
+  let tooth1 = document.getElementById('toothUp')
+  let tooth2 = document.getElementById('toothDown')
+
+  upMouse.style.top = '0px'
+  downMouse.style.bottom = '0px'
+  tooth1.style.top = '50%'
+  tooth2.style.bottom = '50%'
+}
+

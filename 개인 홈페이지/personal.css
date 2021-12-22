@@ -98,6 +98,7 @@ background-size: cover;
 }
 
 #window-image{
+z-index: 0;
 background-image: url(./window.png);
 position: absolute;
 width: 1208px;
@@ -118,6 +119,11 @@ background-size: cover;
 cursor: pointer;
 }
 
+#folder1:hover{
+  filter: brightness(130%);
+}
+
+
 #folder2{
   position: absolute;
   width: 78px;
@@ -127,6 +133,10 @@ cursor: pointer;
   background: url(./folder.png);
   background-size: cover;
   cursor: pointer;
+}
+
+#folder2:hover{
+  filter: brightness(130%);
 }
 
 #folder3{
@@ -140,6 +150,10 @@ cursor: pointer;
   cursor: pointer;
 }
 
+#folder3:hover{
+  filter: brightness(130%);
+}
+
 #folder4{
   position: absolute;
   width: 78px;
@@ -151,6 +165,10 @@ cursor: pointer;
   cursor: pointer;
 }
 
+#folder4:hover{
+  filter: brightness(130%);
+}
+
 #folder5{
   position: absolute;
   width: 78px;
@@ -160,6 +178,10 @@ cursor: pointer;
   background: url(./folder.png);
   background-size: cover;
   cursor: pointer;
+}
+
+#folder5:hover{
+  filter: brightness(130%);
 }
 
 #M-lab-font{
