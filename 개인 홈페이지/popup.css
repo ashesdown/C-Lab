@@ -47,7 +47,6 @@
   align-items: center;
 }
 
-
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -81,8 +80,4 @@ p {
 
 .hidden {
   display: none;
-}
-
-.aniStop{
-  animation-play-state: paused;
 }

@@ -1,39 +1,30 @@
-    const openButton = document.getElementById("box1")
-    const modal = document.querySelector(".modal");
-    const overlay = modal.querySelector(".overlay")
-    const closeBtn = modal.querySelector("#Xbutton")
-    const openModal = () => {
-      modal.classList.remove("hidden");
-    }
-    const closeModal = () => {
-      modal.classList.add("hidden")
-    }
-    overlay.addEventListener("click", closeModal);
-    closeBtn.addEventListener("click", closeModal);
-    openButton.addEventListener("click", openModal);
+const openButton = document.querySelectorAll("#box1, #box2, #box3, #box4")
+const modal = document.querySelectorAll(".modal");
+const overlay = document.querySelectorAll(".overlay")
+const closeBtn = document.querySelectorAll("#Xbutton")
+const element = document.getElementsByClassName('content')[0];
 
-    // const openButton2 = document.getElementById("box2")
-    // const modal2 = document.querySelector(".modal2");
-    // const closeBtn2 = modal.querySelector("#Xbutton")
-    // const openModal2 = () => {
-    //   modal2.classList.remove("hidden");
-    // }
-    // const closeModal2 = () => {
-    //   modal2.classList.add("hidden")
-    // }
-    // overlay.addEventListener("click", closeModal);
-    // closeBtn2.addEventListener("click", closeModal);
-    // openButton2.addEventListener("click", openModal);
+const openModal = () => {
+  modal.classList.remove("hidden");
+}
+const closeModal = () => {
+  modal.classList.add("hidden")
+}
+function modalContent1() {
+  element.innerHTML
+    = '<div style="color:blue">InnerHTML<div>';
+}
 
-    // const anistop = document.getElementById("box1")
-    // const anibox = document.querySelector(".aniStop");
+function modalContent2() {
+  element.innerHTML
+    = '<div style="color:blue">wow<div>';
+}
 
-    // const anipaused = () => {
-    //   anibox.classList.remove("aniStop");
-    // }
+function modalContent3() {
+  element.innerHTML
+    = '<div style="color:blue">hey<div>';
+}
 
-    // const closeModal = () => {
-    //   anibox.classList.add("aniStop")
-    // }
-
-    // openButton.addEventListener("click", anipaused);
+overlay.addEventListener("click", closeModal);
+closeBtn.addEventListener("click", closeModal);
+openButton.addEventListener("click", openModal);
