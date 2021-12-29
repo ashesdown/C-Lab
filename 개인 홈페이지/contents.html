@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #mlabBox {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 800px;
+      height: 600px;
+      border: 2px solid black;
+    }
+
+    #mlabImg1 {
+      position: relative;
+      margin: 4%;
+      width: 40%;
+      height: 60%;
+      background: url(./image.webp);
+      background-size: cover;
+      box-shadow: 0px 15px 10px 1px rgba(0, 0, 0, 0.2);
+
+    }
+
+    #mlabImg2 {
+      position: relative;
+      margin: 4%;
+      width: 40%;
+      height: 60%;
+      background: url(./image2.webp);
+      background-size: cover;
+      box-shadow: 0px 15px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    #mlabInnerbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 800px;
+      height: 400px;
+    }
+
+    #mlabText {
+      text-align: justify;
+      margin: 1%;
+    }
+
+    #mlabTitle{
+      text-align: justify;
+      margin: 1%;
+      font-size: 40px;
+    }
+
+    #mlabTape1 {
+      position: absolute;
+      top: -40%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 70%;
+      background-image: url(./tape2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #mlabTape2 {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 70%;
+      background-image: url(./tape1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mlabBox">
+    <p id="mlabTitle">Experiment-1:Jules Verne</p>
+    <div id="mlabInnerbox">
+      <div id="mlabImg1">
+        <div id="mlabTape1"></div>
+      </div>
+      <div id="mlabImg2">
+        <div id="mlabTape2"></div>
+      </div>
+    </div>
+    <p id="mlabText">이 조형물은 쥘베른의 세상을 사각화한 것입니다. 윗면은 물에 떠있는 배와 아랫면은 우주가 있습니다. 이는 현실과 상상의 대비를 나타냅니다. 현실에서 물에 빠진 사람은 반대편, 상상의 세계로 이동합니다. 이때 조형물을 회전하게 되면 위와 아래의 구분이 사라집니다. 이는 상상과 현실의 경게를 허무는 쥘베른의 이야기들을 표현한 것입니다.</p>
+  </div>
+</body>
+
+</html>

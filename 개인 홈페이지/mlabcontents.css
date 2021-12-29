@@ -1,0 +1,67 @@
+#mlabBox {
+  width: 800px;
+  height: 600px;
+}
+
+#mlabImg1 {
+  position: relative;
+  margin: 4%;
+  width: 40%;
+  height: 70%;
+  background: url(./image.webp);
+  background-size: cover;
+}
+
+#mlabImg2 {
+  position: relative;
+  margin: 4%;
+  width: 40%;
+  height: 70%;
+  background: url(./image2.webp);
+  background-size: cover;
+}
+
+#mlabInnerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 800px;
+  height: 300px;
+}
+
+#mlabText {
+  text-align: justify;
+  font-size: 25px;
+  margin: 1%;
+}
+
+#mlabTitle{
+  text-align: justify;
+  margin: 1%;
+  font-size: 40px;
+}
+
+#mlabTape1 {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 70%;
+  background-image: url(./tape2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mlabTape2 {
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 70%;
+  background-image: url(./tape1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
