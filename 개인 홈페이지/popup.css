@@ -55,7 +55,6 @@
 }
 
 .modalcontent {
-  font-family: 'KyoboHandwriting2020A';
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -66,9 +65,13 @@
   position: relative;
   top: 0px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background-image: url(./paper.jpeg);
-  background-size: cover;
   line-height: 35px;
+}
+
+.modalBackgroundPaper{
+  background: url(./paper.jpeg);
+  background-size: cover;
+  font-family: 'KyoboHandwriting2020A';
 }
 
 .hidden {

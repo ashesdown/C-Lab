@@ -10,6 +10,8 @@
   height: 70%;
   background: url(./image.webp);
   background-size: cover;
+  border: 10px solid white;
+
 }
 
 #mlabImg2 {
@@ -19,6 +21,7 @@
   height: 70%;
   background: url(./image2.webp);
   background-size: cover;
+  border: 10px solid white;
 }
 
 #mlabInnerbox {

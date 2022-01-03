@@ -324,3 +324,15 @@ background: url(./human3.png);
 #box4:hover{
   filter: brightness(130%);
 }
+
+#backArrow{
+  color: white;
+  margin: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#backArrow:hover{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+}
